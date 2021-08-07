@@ -10,13 +10,13 @@ public class Controller {
     @Autowired
     private IMailService iMailService;
     
-    @GetMapping("hi")
-    public String name() throws Exception {
+    @GetMapping("sendMail")
+    public String sendMail() throws Exception {
         String MAIL_SUBJECT = "Hello World";
         String content = "How are you?";
         String[] toUsers = new String[] { "kelvin2274@hotmail.com" };
         boolean isSuc = iMailService.sendSimpleMail(MAIL_SUBJECT, content, toUsers, null);
         System.out.println(isSuc);
-        return "hi";
+        return "sent";
     }
 }

@@ -50,7 +50,6 @@
             <version>3.10</version>
         </dependency>
 
-		<!-- 发送邮件 Begin -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
